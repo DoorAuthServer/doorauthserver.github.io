@@ -22,16 +22,33 @@
       <div class="container">
         <div class="nav-brand">
           <span class="logo">🚪</span>
-          <span class="brand-name">DoorAuth</span>
+          <span>DoorAuth</span>
         </div>
-        <ul class="nav-menu">
+
+        <div class="nav-controls">
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="bn">বাংলা</button>
+          </div>
+          
+          <ul class="nav-menu">
           <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#quickstart" class="nav-link">Quick Start</a></li>
-          <li><a href="#integration" class="nav-link">Integration</a></li>
-          <li><a href="#api" class="nav-link">API</a></li>
+          <li>
+            <a href="#features" class="nav-link" data-en="Features" data-bn="বৈশিষ্ট্য">Features</a>
+          </li>
+          <li>
+            <a href="#how-it-works" class="nav-link" data-en="How it Works" data-bn="কিভাবে কাজ করে">How it Works</a>
+          </li>
+          <li>
+            <a href="#integration" class="nav-link" data-en="Integration" data-bn="ইন্টিগ্রেশন">Integration</a>
+          </li>
+          <li>
+            <a href="#api" class="nav-link" data-en="API" data-bn="এপিআই">API</a>
+          </li>
           <li><a href="#docs" class="nav-link">Docs</a></li>
         </ul>
+        </div>
         <a
           href="https://github.com/alaminmain/DoorAuthServer"
           class="btn-github"
@@ -58,19 +75,18 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="badge-icon">✨</span>
-            <span>Production Ready • 15 Tests Passing</span>
+            <span data-en="New: Multi-Tenant Architecture v2.0" data-bn="নতুন: মাল্টি-টেন্যান্ট আর্কিটেকচার v2.0">New: Multi-Tenant Architecture v2.0</span>
           </div>
           <h1 class="hero-title">
-            Central Authentication System
-            <span class="gradient-text">Built for Scale</span>
+            <span data-en="Secure Your Apps with" data-bn="আপনার অ্যাপ সুরক্ষিত করুন">Secure Your Apps with</span>
+            <span class="gradient-text">DoorAuth</span>
           </h1>
-          <p class="hero-subtitle">
-            A production-ready, self-hosted Identity Provider with
-            Multi-Tenancy, OAuth 2.0/OIDC SSO, RBAC, and Dynamic Menu
-            Management. Deploy in minutes, scale to millions.
+          <p class="hero-subtitle" data-en="Open-source SSO, OAuth 2.0, and OIDC server designed for modern security and seamless multi-tenant integration." data-bn="আধুনিক নিরাপত্তা এবং নিরবচ্ছিন্ন মাল্টি-টেন্যান্ট ইন্টিগ্রেশনের জন্য ডিজাইন করা ওপেন-সোর্স SSO, OAuth 2.0 এবং OIDC সার্ভার।">
+            Open-source SSO, OAuth 2.0, and OIDC server designed for modern
+            security and seamless multi-tenant integration.
           </p>
           <div class="hero-buttons">
-            <a href="#quickstart" class="btn btn-primary">
+            <a href="#quickstart" class="btn btn-primary" data-en="Get Started" data-bn="শুরু করুন">
               <span>Get Started</span>
               <svg
                 width="20"
@@ -129,8 +145,8 @@
     <section id="how-it-works" class="how-it-works">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">How DoorAuth Works</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-en="How DoorAuth Works" data-bn="ডোরঅথ কিভাবে কাজ করে">How DoorAuth Works</h2>
+          <p class="section-subtitle" data-en="Understanding the authentication flow and architecture" data-bn="অথেনটিকেশন ফ্লো এবং আর্কিটেকচার সম্পর্কে জানুন">
             Understanding the authentication flow and architecture
           </p>
         </div>
@@ -306,8 +322,8 @@
     <section id="special-features" class="special-features">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">🌟 Special Features</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-en="🌟 Special Features" data-bn="🌟 বিশেষ বৈশিষ্ট্য">🌟 Special Features</h2>
+          <p class="section-subtitle" data-en="Unique capabilities that set DoorAuth apart" data-bn="ডোরঅথকে আলাদা করে তোলে এমন অনন্য ক্ষমতা">
             Unique capabilities that set DoorAuth apart
           </p>
         </div>
@@ -519,10 +535,9 @@
     <section id="features" class="features">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Powerful Features Out of the Box</h2>
-          <p class="section-subtitle">
-            Everything you need for enterprise-grade authentication and
-            authorization
+          <h2 class="section-title" data-en="Key Features" data-bn="মূল বৈশিষ্ট্য">Key Features</h2>
+          <p class="section-subtitle" data-en="Enterprise-grade security features out of the box" data-bn="এন্টারপ্রাইজ-গ্রেড নিরাপত্তা বৈশিষ্ট্য এখন আপনার হাতের নাগালে">
+            Enterprise-grade security features out of the box
           </p>
         </div>
         <div class="features-grid">
@@ -542,8 +557,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🏢</div>
-            <h3>Multi-Tenancy</h3>
-            <p>
+            <h3 data-en="Multi-Tenancy" data-bn="মাল্টি-টেন্যান্সি">Multi-Tenancy</h3>
+            <p data-en="Built-in support for multiple organizations with complete data isolation and tenant-level configurations." data-bn="সম্পূর্ণ ডেটা আইসোলেশন এবং টেন্যান্ট-লেভেল কনফিগারেশন সহ একাধিক অর্গানাইজেশনের জন্য বিল্ট-ইন সাপোর্ট।">
               Complete tenant isolation with dedicated data spaces. Perfect for
               SaaS applications.
             </p>
@@ -556,8 +571,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>RBAC System</h3>
-            <p>
+            <h3 data-en="RBAC System" data-bn="RBAC সিস্টেম">RBAC System</h3>
+            <p data-en="Granular role-based access control with support for hierarchical roles and individual permissions." data-bn="হায়ারার্কিকাল রোল এবং ইন্ডিভিজুয়াল পারমিশন সাপোর্ট সহ গ্র্যানুলার রোল-বেসড এক্সেস কন্ট্রোল।">
               Role-based access control with granular permissions and dynamic
               menu generation.
             </p>
@@ -570,8 +585,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔄</div>
-            <h3>Single Sign-On</h3>
-            <p>
+            <h3 data-en="Single Sign-On" data-bn="সিঙ্গেল সাইন-অন">Single Sign-On</h3>
+            <p data-en="Centralized authentication allowing users to log in once and access multiple applications seamlessly." data-bn="কেন্দ্রীয় প্রমাণীকরণ যা ব্যবহারকারীদের একবার লগইন করে একাধিক অ্যাপ্লিকেশন নির্বিঘ্নে অ্যাক্সেস করতে দেয়।">
               Login once, access all applications. Centralized authentication
               with SSO logout.
             </p>
@@ -584,8 +599,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🛡️</div>
-            <h3>Security First</h3>
-            <p>
+            <h3 data-en="Security First" data-bn="নিরাপত্তা প্রথম">Security First</h3>
+            <p data-en="Robust security features including 2FA, brute force protection, and account locking to safeguard user data." data-bn="ব্যবহারকারীর ডেটা সুরক্ষিত রাখতে 2FA, ব্রুট ফোর্স সুরক্ষা এবং অ্যাকাউন্ট লকিং সহ শক্তিশালী নিরাপত্তা বৈশিষ্ট্য।">
               Enterprise-grade security with 2FA, brute force protection, and
               account locking.
             </p>
@@ -598,8 +613,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3>Admin Dashboard</h3>
-            <p>
+            <h3 data-en="Admin Dashboard" data-bn="অ্যাডমিন ড্যাশবোর্ড">Admin Dashboard</h3>
+            <p data-en="Intuitive React-based admin panel for comprehensive management of users, tenants, applications, and roles." data-bn="ব্যবহারকারী, টেন্যান্ট, অ্যাপ্লিকেশন এবং রোলগুলির ব্যাপক ব্যবস্থাপনার জন্য স্বজ্ঞাত রিঅ্যাক্ট-ভিত্তিক অ্যাডমিন প্যানেল।">
               Beautiful React-based admin panel for managing users, tenants,
               apps, and roles.
             </p>
@@ -618,9 +633,9 @@
     <section id="quickstart" class="quickstart">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Get Started in Minutes</h2>
-          <p class="section-subtitle">
-            Follow these simple steps to run DoorAuth locally
+          <h2 class="section-title" data-en="Quick Start" data-bn="দ্রুত শুরু করুন">Quick Start</h2>
+          <p class="section-subtitle" data-en="Get your authentication server running in less than 5 minutes" data-bn="৫ মিনিটেরও কম সময়ে আপনার অথেনটিকেশন সার্ভার চালু করুন">
+            Get your authentication server running in less than 5 minutes
           </p>
         </div>
         <div class="steps-container">
@@ -1175,14 +1190,14 @@ app.MapGet("/logout", async (HttpContext context) =>
     <section id="api" class="api-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Comprehensive API</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-en="Comprehensive API Reference" data-bn="বিস্তারিত এপিআই রেফারেন্স">Comprehensive API</h2>
+          <p class="section-subtitle" data-en="Everything you need to integrate and manage your server programmatically" data-bn="আপনার সার্ভারটি প্রোগ্রাম্যাটিকভাবে ইন্টিগ্রেট এবং ম্যানেজ করার জন্য যা কিছু প্রয়োজন">
             40+ RESTful endpoints with full Swagger documentation
           </p>
         </div>
         <div class="api-categories">
           <div class="api-category">
-            <h3>🔐 Authentication (3)</h3>
+            <h3 data-en="Authentication" data-bn="অথেনটিকেশন">🔐 Authentication (3)</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method post">POST</span>
@@ -1199,7 +1214,7 @@ app.MapGet("/logout", async (HttpContext context) =>
             </div>
           </div>
           <div class="api-category">
-            <h3>🔑 OAuth/OIDC (5)</h3>
+            <h3 data-en="OAuth/OIDC" data-bn="OAuth/OIDC">🔑 OAuth/OIDC (5)</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method get">GET</span>
@@ -1224,7 +1239,7 @@ app.MapGet("/logout", async (HttpContext context) =>
             </div>
           </div>
           <div class="api-category">
-            <h3>🏢 Tenant Management (5)</h3>
+            <h3 data-en="Tenant Management" data-bn="টেন্যান্ট ম্যানেজমেন্ট">🏢 Tenant Management (5)</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method get">GET</span>
@@ -1249,7 +1264,7 @@ app.MapGet("/logout", async (HttpContext context) =>
             </div>
           </div>
           <div class="api-category">
-            <h3>📱 Application Management (6)</h3>
+            <h3 data-en="Application Management" data-bn="অ্যাপ্লিকেশন ম্যানেজমেন্ট">📱 Application Management (6)</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method get">GET</span>
@@ -1274,7 +1289,7 @@ app.MapGet("/logout", async (HttpContext context) =>
             </div>
           </div>
           <div class="api-category">
-            <h3>🎯 Role & Permissions (7)</h3>
+            <h3 data-en="Role & Permissions" data-bn="রোল এবং পারমিশন">🎯 Role & Permissions (7)</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method get">GET</span>
@@ -1299,7 +1314,7 @@ app.MapGet("/logout", async (HttpContext context) =>
             </div>
           </div>
           <div class="api-category">
-            <h3>🔒 Security Features</h3>
+            <h3 data-en="Security Features" data-bn="নিরাপত্তা বৈশিষ্ট্য">🔒 Security Features</h3>
             <div class="api-endpoints">
               <div class="api-endpoint">
                 <span class="method post">POST</span>
