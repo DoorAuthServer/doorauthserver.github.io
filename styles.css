@@ -1163,49 +1163,60 @@ section {
 }
 
 /* ============================================
-   CHANGELOG SECTION
+   CHANGELOG PAGE STYLES
    ============================================ */
-.changelog-section {
-  background: white;
-  padding: 100px 0;
-}
-
-.version-info-banner {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  margin-bottom: 48px;
-  padding: 24px 48px;
+.changelog-hero {
   background: var(--gradient-primary);
-  border-radius: 16px;
+  padding: 120px 0 60px;
   color: white;
+  text-align: center;
 }
 
-.current-version,
-.last-updated {
-  display: flex;
-  flex-direction: column;
+.changelog-hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.changelog-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.current-version-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.current-version-badge strong {
+  font-size: 18px;
+}
+
+.current-version-badge .separator {
+  opacity: 0.5;
+}
+
+.changelog-content-section {
+  background: var(--gray-50);
+  padding: 60px 0 100px;
+}
+
+.back-to-docs {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.back-to-docs .btn {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-}
-
-.version-label,
-.update-label {
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.9;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.version-number {
-  font-size: 32px;
-  font-weight: 800;
-}
-
-.update-date {
-  font-size: 20px;
-  font-weight: 600;
 }
 
 .changelog-timeline {
@@ -1360,36 +1371,19 @@ section {
   color: var(--primary);
 }
 
-/* Footer version styles */
-.footer-version {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
+/* Footer updated link styles */
+.footer-updated {
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 
-.footer-version-badge {
-  background: var(--primary);
-  color: white;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.footer-separator {
-  color: var(--gray-600);
-}
-
-.footer-version a {
+.footer-updated a {
   color: var(--primary-light);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.footer-version a:hover {
+.footer-updated a:hover {
   text-decoration: underline;
 }
 
@@ -1584,9 +1578,14 @@ section {
     padding: 24px;
   }
 
-  .footer-version {
+  .changelog-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .current-version-badge {
     flex-direction: column;
     gap: 8px;
+    padding: 16px 24px;
   }
 }
 

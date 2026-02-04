@@ -50,7 +50,6 @@
             <a href="creator.html" class="nav-link" data-en="Creator" data-bn="নির্মাতা">Creator</a>
           </li>
           <li><a href="#docs" class="nav-link" data-en="Docs" data-bn="ডকুমেন্টেশন">Docs</a></li>
-          <li><a href="#changelog" class="nav-link" data-en="Changelog" data-bn="পরিবর্তন">Changelog</a></li>
         </ul>
         </div>
         <a
@@ -2414,117 +2413,6 @@ app.MapGet("/logout", async (HttpContext context) =&gt; {
       </div>
     </section>
 
-    <!-- Changelog Section -->
-    <section id="changelog" class="changelog-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Changelog</h2>
-          <p class="section-subtitle">
-            Documentation version history and updates
-          </p>
-        </div>
-
-        <div class="version-info-banner">
-          <div class="current-version">
-            <span class="version-label">Current Version</span>
-            <span class="version-number">v2.1.0</span>
-          </div>
-          <div class="last-updated">
-            <span class="update-label">Last Updated</span>
-            <span class="update-date">February 4, 2026</span>
-          </div>
-        </div>
-
-        <div class="changelog-timeline">
-          <!-- Version 2.1.0 -->
-          <div class="changelog-entry latest">
-            <div class="changelog-marker">
-              <span class="version-badge">v2.1.0</span>
-              <span class="changelog-date">February 4, 2026</span>
-            </div>
-            <div class="changelog-content">
-              <h3>Integration Guides & SSO Portal Documentation</h3>
-              <div class="changelog-category added">
-                <h4>Added</h4>
-                <ul>
-                  <li>Complete step-by-step ASP.NET Core OIDC integration guide (8 steps)</li>
-                  <li>Complete step-by-step React SPA OAuth 2.0 PKCE integration guide (9 steps)</li>
-                  <li>Expanded Node.js integration guide with Passport.js examples</li>
-                  <li>New SSO Portal Integration Pattern section with visual flow diagram</li>
-                  <li>SSO token passing implementation examples</li>
-                  <li>Centralized logout pattern documentation</li>
-                  <li>Interactive test checklists for each framework</li>
-                  <li>Version tracking and changelog section</li>
-                </ul>
-              </div>
-              <div class="changelog-category improved">
-                <h4>Improved</h4>
-                <ul>
-                  <li>Code examples now include full implementation details</li>
-                  <li>Added responsive styles for SSO Portal section</li>
-                  <li>Better organization of integration content</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Version 2.0.0 -->
-          <div class="changelog-entry">
-            <div class="changelog-marker">
-              <span class="version-badge">v2.0.0</span>
-              <span class="changelog-date">January 2026</span>
-            </div>
-            <div class="changelog-content">
-              <h3>Multi-Tenant Architecture & Documentation Site</h3>
-              <div class="changelog-category added">
-                <h4>Added</h4>
-                <ul>
-                  <li>Interactive documentation website with GitHub Pages deployment</li>
-                  <li>Framework selector for integration guides (Blazor, ASP.NET, React, Node.js)</li>
-                  <li>How It Works section with architecture diagrams</li>
-                  <li>Problems We Solve section</li>
-                  <li>Special Features section (Smart Menu, Tenant Management)</li>
-                  <li>Bilingual support (English/Bangla)</li>
-                  <li>Creator profile page</li>
-                </ul>
-              </div>
-              <div class="changelog-category improved">
-                <h4>Improved</h4>
-                <ul>
-                  <li>Modern glassmorphism UI design</li>
-                  <li>Smooth scroll animations</li>
-                  <li>Mobile responsive layout</li>
-                  <li>SEO optimization with sitemap and meta tags</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Version 1.0.0 -->
-          <div class="changelog-entry">
-            <div class="changelog-marker">
-              <span class="version-badge">v1.0.0</span>
-              <span class="changelog-date">December 2025</span>
-            </div>
-            <div class="changelog-content">
-              <h3>Initial Release</h3>
-              <div class="changelog-category added">
-                <h4>Added</h4>
-                <ul>
-                  <li>DoorAuth Server with OAuth 2.0/OIDC support</li>
-                  <li>Multi-tenant architecture</li>
-                  <li>RBAC permission system</li>
-                  <li>Admin dashboard (React)</li>
-                  <li>API documentation (Swagger)</li>
-                  <li>Example applications (DoorAuthSample, client_todo)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -2634,13 +2522,9 @@ app.MapGet("/logout", async (HttpContext context) =&gt; {
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-version">
-            <span class="footer-version-badge">Docs v2.1.0</span>
-            <span class="footer-separator">•</span>
-            <span>Last updated: February 4, 2026</span>
-            <span class="footer-separator">•</span>
-            <a href="#changelog">View Changelog</a>
-          </div>
+          <p class="footer-updated">
+            Last updated: <a href="changelog.html">February 4, 2026</a>
+          </p>
           <p>&copy; 2026 DoorAuth. Released under the MIT License.</p>
           <p>Built with Node.js, Express, Prisma, TypeScript, and React</p>
         </div>
